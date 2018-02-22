@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="160.0">
+         <children>
+            <Group>
+               <children>
+                  <RadioButton fx:id="selectMoveBut" mnemonicParsing="false" text="Select/move" />
+                  <RadioButton fx:id="ellipseBut" layoutY="23.0" mnemonicParsing="false" text="Ellipse" />
+                  <RadioButton fx:id="rectBut" layoutY="46.0" mnemonicParsing="false" text="Rectangle" />
+                  <RadioButton fx:id="lineBut" layoutY="69.0" mnemonicParsing="false" text="Line" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="50.0" />
+               </VBox.margin>
+            </Group>
+            <ColorPicker fx:id="colorChose">
+               <VBox.margin>
+                  <Insets left="10.0" top="50.0" />
+               </VBox.margin>
+            </ColorPicker>
+            <Button fx:id="deleteBut" mnemonicParsing="false" text="Delete">
+               <VBox.margin>
+                  <Insets left="10.0" top="70.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="cloneBut" mnemonicParsing="false" text="Close">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Canvas fx:id="drawZone" height="401.0" width="442.0" />
+   </children>
+</HBox>
